@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="expense-container">
+
+    <h1>💰 Expense Tracker Dashboard</h1>
+
+    <div class="expense-form">
+
+        <input type="text"
+        id="expenseName"
+        placeholder="Expense Name">
+
+        <input type="number"
+        id="expenseAmount"
+        placeholder="Amount">
+
+        <select id="expenseCategory">
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Shopping</option>
+            <option>Entertainment</option>
+        </select>
+
+        <button onclick="addExpense()">
+            Add Expense
+        </button>
+
+    </div>
+
+    <div class="summary">
+
+        <div class="box">
+            <h3>Total Expenses</h3>
+            <h2 id="totalAmount">₹0</h2>
+        </div>
+
+        <div class="box">
+            <h3>Total Entries</h3>
+            <h2 id="totalEntries">0</h2>
+        </div>
+
+    </div>
+
+    <input
+type="number"
+id="budget"
+placeholder="Monthly Budget">
+
+    <input
+    type="text"
+    id="searchExpense"
+    placeholder="Search Expense...">
+
+    <ul id="expenseList"></ul>
+
+</section>
+<div class="chart-container">
+    <canvas id="expenseChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<canvas id="expenseChart"></canvas>
+
+</body>
+</html>
