@@ -1,0 +1,85 @@
+body{
+
+background:
+linear-gradient(
+135deg,
+#e0f7ff,
+#dff6ff,
+#f8fbff
+);
+
+}
+
+.quote-section{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.quote-box{
+    width:80%;
+    max-width:800px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.2);
+
+    text-align:center;
+}
+
+.quote-box h1{
+    color:#00d4ff;
+    margin-bottom:25px;
+}
+
+#quote{
+    font-size:28px;
+    font-style:italic;
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#333;
+}
+
+#author{
+    color:#00d4ff;
+    margin-bottom:25px;
+}
+
+.quote-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.quote-buttons button{
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#00d4ff;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.quote-buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 5px 15px rgba(0,212,255,.4);
+
+}
